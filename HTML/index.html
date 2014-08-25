@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mtn Biking</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+</head>
+<body>
+
+	<div id="menu" class="active">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand"><a id="menu-toggle" href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+				</li>
+				<li><a class="sidebar-option" href="#">Home</a>
+				</li>
+				<li><a class="sidebar-option" href="#">Packages</a>
+				</li>
+				<li><a class="sidebar-option" href="#">About</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="contenedor-principal">
+		<div class="barra"></div>
+		<div class="slider"><img src="../IMAGES/slider.jpg"></div>
+	</div>
+
+	
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="../JS/jquery.min.js"></script>
+	<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+
+	<!-- JavaScript para el Menu Toggle -->
+	<script>
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#menu").toggleClass("active");
+	});
+	</script>
+</body>
+</html>

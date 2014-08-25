@@ -1,0 +1,101 @@
+azulclaro = #2DA0E3;
+azulmedioclaro = #1F90D2;
+azulmediooscuro = #2767AB;
+azuloscuro = #1E252F;
+bgcolor = #E5E6DF;
+
+body, html
+	height 100%
+
+body
+	background-color bgcolor;
+	font-family 'Lato', sans-serif
+
+	#contenedor-principal
+		
+		.barra
+			background-color azulclaro
+			height 70px
+			position fixed
+			width 100%
+
+		.slider
+			
+			img
+				height 100%
+
+	#menu
+		
+		&.active
+			left 230px
+			position relative
+
+			#sidebar-wrapper
+				left 230px
+				transition all 0.4s ease 0s
+				width 230px
+
+	#sidebar-wrapper
+		background-color azuloscuro
+		height 100%
+		left 0px
+		margin-left -230px
+		position fixed
+		transition all 0.4s ease 0s
+		width 230px
+		z-index 1000
+
+	.sidebar-nav
+		list-style none
+		margin 0
+		padding 0
+		position absolute
+		top 0
+		width 230px
+
+		li
+			font-size 18px
+			font-weight bold
+			line-height 40px
+			text-align center
+			// text-indent 20px
+			text-transform uppercase
+
+			.sidebar-option
+				// border-bottom 1px solid white
+				color #ffffff
+				display block
+				text-decoration none
+
+				span
+					display inline
+					margin-right 5px
+					top 3px
+					text-shadow none
+
+				&:hover
+					background-color rgba(255,255,255,0.2)
+					text-decoration none
+
+				&:active
+				&:focus
+					text-decoration none
+
+		&>.sidebar-brand
+			background-color azuloscuro
+			font-size 20px
+			height 70px
+			line-height 60px
+			// width 280px
+
+			a
+				color #ffffff
+
+				span
+					float right
+					right 15px
+					top 23px
+
+				&:hover
+					background-color none
+					color #fff
