@@ -18,11 +18,66 @@ body
 			height 70px
 			position fixed
 			width 100%
+			z-index 30
+
+			a
+				color white
+				font-size 20px
+				font-weight bold
+				line-height 65px
+				text-decoration none
+				vertical-align middle
+				margin-left 140px
+
+				span
+					margin-left 4px
 
 		.slider
-			
+			height 100vh
+			overflow hidden
+			position relative
+
 			img
-				height 100%
+				bottom 0
+				position absolute
+				width 100%
+				z-index -100
+				opacity 0.9
+
+		.div-contenido
+			
+			.separador-contenido
+				height 10px
+				background-color azulmedioclaro
+
+			.contenido
+				height 500px
+
+	.div-footer1
+		background-color azulmediooscuro
+		height 200px
+
+	.div-footer2
+		background-color azuloscuro
+		color white
+		height 80px
+		text-align center
+		padding-top 18px
+
+		span
+			font-weight bold
+			display block
+
+		p
+			display block
+			text-transform uppercase
+
+			a
+				text-decoration none
+				color white
+
+				&:hover
+					color azulclaro
 
 	#menu
 		
@@ -58,11 +113,9 @@ body
 			font-weight bold
 			line-height 40px
 			text-align center
-			// text-indent 20px
 			text-transform uppercase
 
 			.sidebar-option
-				// border-bottom 1px solid white
 				color #ffffff
 				display block
 				text-decoration none
@@ -82,19 +135,25 @@ body
 					text-decoration none
 
 		&>.sidebar-brand
-			background-color azuloscuro
 			font-size 20px
 			height 70px
-			line-height 60px
-			// width 280px
+			position relative
+
+			img
+				float left
+				height 35px
+				margin 20px 0px 0px 20px
 
 			a
 				color #ffffff
+				position absolute
+				text-decoration none
+				top 12px
+				right 8px
 
 				span
-					float right
-					right 15px
-					top 23px
+					top 3px
+					margin-left 2px
 
 				&:hover
 					background-color none

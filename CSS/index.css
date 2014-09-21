@@ -11,9 +11,64 @@ body #contenedor-principal .barra {
   height: 70px;
   position: fixed;
   width: 100%;
+  z-index: 30;
+}
+body #contenedor-principal .barra a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 65px;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 140px;
+}
+body #contenedor-principal .barra a span {
+  margin-left: 4px;
+}
+body #contenedor-principal .slider {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 body #contenedor-principal .slider img {
-  height: 100%;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -100;
+  opacity: 0.9;
+}
+body #contenedor-principal .div-contenido .separador-contenido {
+  height: 10px;
+  background-color: #1f90d2;
+}
+body #contenedor-principal .div-contenido .contenido {
+  height: 500px;
+}
+body .div-footer1 {
+  background-color: #2767ab;
+  height: 200px;
+}
+body .div-footer2 {
+  background-color: #1e252f;
+  color: #fff;
+  height: 80px;
+  text-align: center;
+  padding-top: 18px;
+}
+body .div-footer2 span {
+  font-weight: bold;
+  display: block;
+}
+body .div-footer2 p {
+  display: block;
+  text-transform: uppercase;
+}
+body .div-footer2 p a {
+  text-decoration: none;
+  color: #fff;
+}
+body .div-footer2 p a:hover {
+  color: #2da0e3;
 }
 body #menu.active {
   left: 230px;
@@ -69,18 +124,25 @@ body .sidebar-nav li .sidebar-option:focus {
   text-decoration: none;
 }
 body .sidebar-nav>.sidebar-brand {
-  background-color: #1e252f;
   font-size: 20px;
   height: 70px;
-  line-height: 60px;
+  position: relative;
+}
+body .sidebar-nav>.sidebar-brand img {
+  float: left;
+  height: 35px;
+  margin: 20px 0px 0px 20px;
 }
 body .sidebar-nav>.sidebar-brand a {
   color: #fff;
+  position: absolute;
+  text-decoration: none;
+  top: 12px;
+  right: 8px;
 }
 body .sidebar-nav>.sidebar-brand a span {
-  float: right;
-  right: 15px;
-  top: 23px;
+  top: 3px;
+  margin-left: 2px;
 }
 body .sidebar-nav>.sidebar-brand a:hover {
   background-color: none;

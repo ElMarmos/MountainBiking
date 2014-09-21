@@ -10,12 +10,16 @@
 </head>
 <body>
 
-	<div id="menu" class="active">
+	<div id="menu">
 
 		<!-- Sidebar -->
 		<div id="sidebar-wrapper">
 			<ul class="sidebar-nav">
-				<li class="sidebar-brand"><a id="menu-toggle" href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+				<li class="sidebar-brand">
+					<div class="wrap-brand">
+						<!-- <img src="../IMAGES/Logotipo.svg"> -->
+						<a class="menu-toggle" href="#">Close<span class="glyphicon glyphicon-remove"></span>
+						</a>
 				</li>
 				<li><a class="sidebar-option" href="#">Home</a>
 				</li>
@@ -28,8 +32,22 @@
 	</div>
 
 	<div id="contenedor-principal">
-		<div class="barra"></div>
+		<div class="barra">
+			<a class="menu-toggle" href="#">MENU<span class="glyphicon glyphicon-align-justify"></span></a>
+		</div>
 		<div class="slider"><img src="../IMAGES/slider.jpg"></div>
+		<div class="div-contenido">
+			<div class="separador-contenido"></div>
+			<div class="contenido"></div>
+		</div>
+	</div>
+
+	<div class="div-footer1">
+		
+	</div>
+	<div class="div-footer2">
+		<span>-Designed by-</span>
+		<p><a href="">Alejandro Marmolejo</a> | <a href="">Juan Manuel Mendez</a></p>
 	</div>
 
 	
@@ -39,7 +57,7 @@
 
 	<!-- JavaScript para el Menu Toggle -->
 	<script>
-	$("#menu-toggle").click(function(e) {
+	$(".menu-toggle").click(function(e) {
 		e.preventDefault();
 		$("#menu").toggleClass("active");
 	});
