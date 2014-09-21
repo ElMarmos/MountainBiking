@@ -6,14 +6,14 @@ body {
   background-color: #e5e6df;
   font-family: 'Lato', sans-serif;
 }
-body #contenedor-principal .barra {
+body .barra {
   background-color: #2da0e3;
   height: 70px;
   position: fixed;
   width: 100%;
   z-index: 30;
 }
-body #contenedor-principal .barra a {
+body .barra a {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -22,26 +22,25 @@ body #contenedor-principal .barra a {
   vertical-align: middle;
   margin-left: 140px;
 }
-body #contenedor-principal .barra a span {
+body .barra a span {
   margin-left: 4px;
 }
-body #contenedor-principal .slider {
+body .slider {
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-body #contenedor-principal .slider img {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
+body .slider img {
+  height: 100%;
+  width: auto;
   z-index: -100;
   opacity: 0.9;
 }
-body #contenedor-principal .div-contenido .separador-contenido {
+body .div-contenido .separador-contenido {
   height: 10px;
   background-color: #1f90d2;
 }
-body #contenedor-principal .div-contenido .contenido {
+body .div-contenido .contenido {
   height: 500px;
 }
 body .div-footer1 {
