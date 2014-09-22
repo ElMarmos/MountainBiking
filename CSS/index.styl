@@ -92,61 +92,63 @@ body
 		width 230px
 		z-index 1000
 
-	.sidebar-nav
-		list-style none
-		margin 0
-		padding 0
-		position absolute
-		top 0
-		width 230px
+		.sidebar-nav
+			list-style none
+			margin 0
+			padding 0
+			position absolute
+			top 0
+			width 230px
 		
-		ul
-			
-			li
-				font-size 18px
-				font-weight bold
-				line-height 40px
-				margin-left -40px
-				text-align center
-				text-transform uppercase
+			ul
+				
+				li
+					font-size 18px
+					font-weight bold
+					line-height 40px
+					margin-left -40px
+					text-align center
+					text-transform uppercase
+
+					a
+						color #ffffff
+						display block
+						text-decoration none
+
+						&:hover
+							background-color rgba(255,255,255,0.2)
+							text-decoration none
+
+						&:active
+						&:focus
+							text-decoration none
+
+			&>.sidebar-brand
+				font-size 20px
+				height 70px
+				position relative
+
+				img
+					float left
+					height 35px
+					margin 20px 0px 0px 20px
 
 				a
 					color #ffffff
-					display block
+					position absolute
+					right 8px
 					text-decoration none
+					text-transform uppercase
+					font-weight bold
+					top 12px
+
+					span
+						top 3px
+						margin-left 2px
 
 					&:hover
-						background-color rgba(255,255,255,0.2)
-						text-decoration none
-
-					&:active
-					&:focus
-						text-decoration none
-
-		&>.sidebar-brand
-			font-size 20px
-			height 70px
-			position relative
-
-			img
-				float left
-				height 35px
-				margin 20px 0px 0px 20px
-
-			a
-				color #ffffff
-				position absolute
-				text-decoration none
-				top 12px
-				right 8px
-
-				span
-					top 3px
-					margin-left 2px
-
-				&:hover
-					background-color none
-					color #fff
+						background-color none
+						color #fff
 
 @media screen and (max-width: 768px)
 	
