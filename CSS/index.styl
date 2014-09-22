@@ -25,7 +25,7 @@ body
 			line-height 65px
 			text-decoration none
 			vertical-align middle
-			margin-left 140px
+			margin-left 40px
 
 			span
 				margin-left 4px
@@ -36,24 +36,18 @@ body
 		position relative
 
 		img
-			// position absolute
 			height 100%
 			width auto
 			z-index -100
 			opacity 0.9
-
-	.div-contenido
 		
-		.separador-contenido
-			height 10px
-			background-color azulmedioclaro
+	.separador-contenido
+		height 10px
+		background-color azulmedioclaro
 
-		.contenido
-			height 500px
-
-	.div-footer1
-		background-color azulmediooscuro
-		height 200px
+	.main-container
+		background-image url('../IMAGES/BG.png')
+		height 100vh
 
 	.div-footer2
 		background-color azuloscuro
@@ -105,32 +99,29 @@ body
 		position absolute
 		top 0
 		width 230px
+		
+		ul
+			
+			li
+				font-size 18px
+				font-weight bold
+				line-height 40px
+				margin-left -40px
+				text-align center
+				text-transform uppercase
 
-		li
-			font-size 18px
-			font-weight bold
-			line-height 40px
-			text-align center
-			text-transform uppercase
-
-			.sidebar-option
-				color #ffffff
-				display block
-				text-decoration none
-
-				span
-					display inline
-					margin-right 5px
-					top 3px
-					text-shadow none
-
-				&:hover
-					background-color rgba(255,255,255,0.2)
+				a
+					color #ffffff
+					display block
 					text-decoration none
 
-				&:active
-				&:focus
-					text-decoration none
+					&:hover
+						background-color rgba(255,255,255,0.2)
+						text-decoration none
+
+					&:active
+					&:focus
+						text-decoration none
 
 		&>.sidebar-brand
 			font-size 20px
@@ -156,3 +147,9 @@ body
 				&:hover
 					background-color none
 					color #fff
+
+@media screen and (max-width: 768px)
+	
+	.barra
+		a
+			margin-left 20px !important

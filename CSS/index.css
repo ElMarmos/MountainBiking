@@ -20,7 +20,7 @@ body .barra a {
   line-height: 65px;
   text-decoration: none;
   vertical-align: middle;
-  margin-left: 140px;
+  margin-left: 40px;
 }
 body .barra a span {
   margin-left: 4px;
@@ -36,16 +36,13 @@ body .slider img {
   z-index: -100;
   opacity: 0.9;
 }
-body .div-contenido .separador-contenido {
+body .separador-contenido {
   height: 10px;
   background-color: #1f90d2;
 }
-body .div-contenido .contenido {
-  height: 500px;
-}
-body .div-footer1 {
-  background-color: #2767ab;
-  height: 200px;
+body .main-container {
+  background-image: url("../IMAGES/BG.png");
+  height: 100vh;
 }
 body .div-footer2 {
   background-color: #1e252f;
@@ -96,30 +93,25 @@ body .sidebar-nav {
   top: 0;
   width: 230px;
 }
-body .sidebar-nav li {
+body .sidebar-nav ul li {
   font-size: 18px;
   font-weight: bold;
   line-height: 40px;
+  margin-left: -40px;
   text-align: center;
   text-transform: uppercase;
 }
-body .sidebar-nav li .sidebar-option {
+body .sidebar-nav ul li a {
   color: #fff;
   display: block;
   text-decoration: none;
 }
-body .sidebar-nav li .sidebar-option span {
-  display: inline;
-  margin-right: 5px;
-  top: 3px;
-  text-shadow: none;
-}
-body .sidebar-nav li .sidebar-option:hover {
+body .sidebar-nav ul li a:hover {
   background-color: rgba(255,255,255,0.2);
   text-decoration: none;
 }
-body .sidebar-nav li .sidebar-option:active,
-body .sidebar-nav li .sidebar-option:focus {
+body .sidebar-nav ul li a:active,
+body .sidebar-nav ul li a:focus {
   text-decoration: none;
 }
 body .sidebar-nav>.sidebar-brand {
@@ -146,4 +138,9 @@ body .sidebar-nav>.sidebar-brand a span {
 body .sidebar-nav>.sidebar-brand a:hover {
   background-color: none;
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .barra a {
+    margin-left: 20px !important;
+  }
 }

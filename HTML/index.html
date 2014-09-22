@@ -12,48 +12,58 @@
 
 	<header>
 
-	<div id="menu">
+		<div id="menu">
 
-		<div id="sidebar-wrapper">
-			<ul class="sidebar-nav">
-				<li class="sidebar-brand">
-					<div class="wrap-brand">
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li class="sidebar-brand">
+						<div class="wrap-brand">
 
-						<a class="menu-toggle" href="#">Close<span class="glyphicon glyphicon-remove"></span>
-						</a>
+							<a class="menu-toggle" href="#">Close<span class="glyphicon glyphicon-remove"></span>
+							</a>
 
-				</li>
-				<li><a class="sidebar-option" href="#">Home</a>
-				</li>
-				<li><a class="sidebar-option" href="#">Packages</a>
-				</li>
-				<li><a class="sidebar-option" href="#">About</a>
-				</li>
-			</ul>
+						</div>
+					</li>
+
+					<div class="main-menu">
+
+						<ul>
+							<li>
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#">Packages</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<ul>
+
+					</div>
+				</ul>
+			</div>
 		</div>
-	</div>
 
-		<div class="barra">
-			<a class="menu-toggle" href="#">MENU<span class="glyphicon glyphicon-align-justify"></span></a>
-		</div>
+			<div class="barra">
+				<a class="menu-toggle" href="#">MENU<span class="glyphicon glyphicon-align-justify"></span></a>
+			</div>
 
 	</header>
 
 		<div class="slider"><img src="../IMAGES/slider.jpg"></div>
-		<div class="div-contenido">
-			<div class="separador-contenido"></div>
-			<div class="contenido"></div>
-		</div>
 
-	<div class="div-footer1">
+		<div class="separador-contenido"></div>
+
+	<div class="main-container">
 		
+
 	</div>
+
 	<div class="div-footer2">
 		<span>-Designed by-</span>
 		<p><a href="">Alejandro Marmolejo</a> | <a href="">Juan Manuel Mendez</a></p>
 	</div>
 
-	
 	<!-- JavaScripts -->
 	<script type="text/javascript" src="../JS/jquery.min.js"></script>
 	<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
@@ -64,6 +74,14 @@
 		e.preventDefault();
 		$("#menu").toggleClass("active");
 	});
+	</script>
+
+	<script>
+
+	if($( window ).width() > $(window.height())){
+
+	}
+	
 	</script>
 </body>
 </html>
