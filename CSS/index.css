@@ -1,7 +1,3 @@
-body,
-html {
-  height: 100%;
-}
 body {
   background-color: #e5e6df;
   font-family: 'Lato', sans-serif;
@@ -41,7 +37,6 @@ body .separador-contenido {
   background-color: #1f90d2;
 }
 body .main-container {
-  background-image: url("../IMAGES/BG.png");
   height: 100vh;
 }
 body .div-footer2 {
@@ -141,8 +136,30 @@ body #sidebar-wrapper .sidebar-nav>.sidebar-brand a:hover {
   background-color: none;
   color: #fff;
 }
+.contenido-ruta {
+  min-height: 100vh;
+  padding: 80px 120px;
+}
+.contenido-ruta .titulo-ruta {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.contenido-ruta .seccion-ruta {
+  margin: 20px 0px;
+}
+.contenido-ruta .seccion-ruta .titulo-seccion {
+  font-weight: bold;
+  font-size: 18px;
+}
+.contenido-ruta .seccion-ruta .texto-seccion {
+  font-size: 16px;
+}
 @media screen and (max-width: 768px) {
   .barra a {
     margin-left: 20px !important;
+  }
+  .contenido-ruta {
+    padding: 80px 30px;
   }
 }

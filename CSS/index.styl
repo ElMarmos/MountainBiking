@@ -4,8 +4,10 @@ azulmediooscuro = #2767AB;
 azuloscuro = #1E252F;
 bgcolor = #E5E6DF;
 
-body, html
-	height 100%
+//  <<-------------Pagina Principal------------->>
+
+// body, html
+// 	height 100%
 
 body
 	background-color bgcolor;
@@ -46,7 +48,6 @@ body
 		background-color azulmedioclaro
 
 	.main-container
-		background-image url('../IMAGES/BG.png')
 		height 100vh
 
 	.div-footer2
@@ -150,8 +151,35 @@ body
 						background-color none
 						color #fff
 
+//  <<-------------Pagina Principal------------->>
+
+
+//  <<-------------Pagina de Ruta------------->>
+
+	.contenido-ruta
+		min-height 100vh
+		padding 80px 120px
+
+		.titulo-ruta
+			font-size 50px
+			font-weight bold
+			margin 20px 0px
+
+		.seccion-ruta
+			margin 20px 0px
+
+			.titulo-seccion
+				font-weight bold
+				font-size 18px
+
+			.texto-seccion
+				font-size 16px
+
 @media screen and (max-width: 768px)
 	
 	.barra
 		a
 			margin-left 20px !important
+
+	.contenido-ruta
+		padding 80px 30px
