@@ -26,29 +26,78 @@ body
 			font-weight bold
 			line-height 65px
 			text-decoration none
-			vertical-align middle
 			margin-left 40px
 
 			span
 				margin-left 4px
-
-	.slider
-		height 100vh
-		overflow hidden
-		position relative
-
-		img
-			height 100%
-			width auto
-			z-index -100
-			opacity 0.9
 		
 	.separador-contenido
 		height 10px
 		background-color azulmedioclaro
+		
+	.div-info
+		display table
+		width 100%
+		
+		#foto-panel-info
+			background-position center
+			border 10px solid white
+			box-shadow 0px 0px 30px rgba(black, 0.3)
+			height 50vh
+			margin 0 auto
+			max-width 50vh
+			width 100%
+			
+		#texto-panel-info
+			min-height 50vh
+			margin 0 auto
+			width 100%
+			max-width 80vh
+			
+			h1 
+				margin 0px
 
-	.main-container
+			p
+				text-align justify
+
+	// <--Main Container con carousel-->
+
+	.slider-imagenes
 		height 100vh
+		
+		.carousel
+			
+			.caption-background
+				background-color rgba(black, 0.4)
+				border-radius 25px
+				display inline-block
+				padding 10px
+				
+				h1
+					margin 10px 0px
+
+				p
+					font-size 18px
+
+			.slide1
+				background-image url('../IMAGES/elegida.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+			.slide2
+				background-image url('../IMAGES/elegida1.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+			.slide3
+				background-image url('../IMAGES/elegida3.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+	// <------------------------------->
 
 	.div-footer2
 		background-color azuloscuro
@@ -183,3 +232,12 @@ body
 
 	.contenido-ruta
 		padding 80px 30px
+		
+	.slider-imagenes
+		.carousel
+			.caption-background
+				h1
+					font-size 20px
+
+				p
+					font-size 14px

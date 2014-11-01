@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="../IMAGES/favicon.png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Mtn Biking</title>
@@ -29,7 +30,10 @@
 
 						<ul>
 							<li>
-								<a href="#">Home</a>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="ruta.html">Dapa</a>
 							</li>
 							<li>
 								<a href="#">Packages</a>
@@ -45,17 +49,75 @@
 		</div>
 
 			<div class="barra">
-				<a class="menu-toggle" href="#">MENU<span class="glyphicon glyphicon-align-justify"></span></a>
+				<a class="menu-toggle" href="#"><img src="../IMAGES/wheel.svg" width="35px" style="margin-right: 8px; padding-bottom:5px">MENU</a>
 			</div>
 
 	</header>
 
-		<div class="slider"><img src="../IMAGES/slider.jpg"></div>
+	<!-- <div style="height: 70px"></div> -->
 
-		<div class="separador-contenido"></div>
-
-	<div class="main-container">
+	<div class="slider-imagenes">
 		
+		<div id="micarrusel" class="carousel slide" data-ride="carousel">
+			<!--Declara los indicadores para tres diapositivas, la primea activa-->
+			<ol class="carousel-indicators">
+				<li data-target="#micarrusel" data-slide-to="0" class="active"></li>
+				<li data-target="#micarrusel" data-slide-to="1"></li>
+				<li data-target="#micarrusel" data-slide-to="2"></li>
+			</ol>
+			<!--Declara los items para las diapositivas-->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="slide1"></div>
+					<!--Cption es donde se coloca el texto en un h1 y un p-->
+					<div class="carousel-caption">
+						<div class="caption-background">
+							<h1>Welcome To Colombia Mountain Biking</h1>
+							<p>Join us on interesting tours around Colombia.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide2"></div>
+					<div class="carousel-caption">
+						<div class="caption-background">
+							<h1>Controles</h1>
+							<p>Los controles son las flechas colocadas a la izquierda y a la derecha del carrusel</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide3"></div>
+					<div class="carousel-caption">
+						<div class="caption-background">
+							<h1>Indicadores</h1>
+							<p>Los indicadores son los círculos en la parte inferior del carrusel que indican la imagen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#micarrusel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#micarrusel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+		</div>
+
+	</div>
+
+	<div class="separador-contenido"></div>
+
+	<div class="div-info">
+		
+		<div class="row" style="display: table-cell; vertical-align: middle;">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 15px 15px">
+				<div id="foto-panel-info" style="background-image: url('../IMAGES/cali.jpg')">
+					
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 15px 15px">
+				<div id="texto-panel-info">
+					<h1>HOLA HOLA HOLA HOLA</h1>
+					<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+				</div>
+			</div>
+		</div>
 
 	</div>
 
