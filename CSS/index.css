@@ -1,0 +1,214 @@
+body {
+  background-color: #e5e6df;
+  font-family: 'Lato', sans-serif;
+}
+body .barra {
+  background-color: #2da0e3;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+}
+body .barra a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 65px;
+  text-decoration: none;
+  margin-left: 40px;
+}
+body .barra a span {
+  margin-left: 4px;
+}
+body .separador-contenido {
+  height: 10px;
+  background-color: #1f90d2;
+}
+body .div-info {
+  display: table;
+  width: 100%;
+}
+body .div-info #foto-panel-info {
+  background-position: center;
+  border: 10px solid #fff;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  height: 50vh;
+  margin: 0 auto;
+  max-width: 50vh;
+  width: 100%;
+}
+body .div-info #texto-panel-info {
+  min-height: 50vh;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80vh;
+}
+body .div-info #texto-panel-info h1 {
+  margin: 0px;
+}
+body .div-info #texto-panel-info p {
+  text-align: justify;
+}
+body .slider-imagenes {
+  height: 100vh;
+}
+body .slider-imagenes .carousel .caption-background {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px;
+}
+body .slider-imagenes .carousel .caption-background h1 {
+  margin: 10px 0px;
+}
+body .slider-imagenes .carousel .caption-background p {
+  font-size: 18px;
+}
+body .slider-imagenes .carousel .slide1 {
+  background-image: url("../IMAGES/elegida.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+body .slider-imagenes .carousel .slide2 {
+  background-image: url("../IMAGES/elegida1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+body .slider-imagenes .carousel .slide3 {
+  background-image: url("../IMAGES/elegida3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+body .div-footer2 {
+  background-color: #1e252f;
+  color: #fff;
+  height: 80px;
+  text-align: center;
+  padding-top: 18px;
+}
+body .div-footer2 span {
+  font-weight: bold;
+  display: block;
+}
+body .div-footer2 p {
+  display: block;
+  text-transform: uppercase;
+}
+body .div-footer2 p a {
+  text-decoration: none;
+  color: #fff;
+}
+body .div-footer2 p a:hover {
+  color: #2da0e3;
+}
+body #menu.active {
+  left: 230px;
+  position: relative;
+}
+body #menu.active #sidebar-wrapper {
+  left: 230px;
+  transition: all 0.4s ease 0s;
+  width: 230px;
+}
+body #sidebar-wrapper {
+  background-color: #1e252f;
+  height: 100%;
+  left: 0px;
+  margin-left: -230px;
+  position: fixed;
+  transition: all 0.4s ease 0s;
+  width: 230px;
+  z-index: 1000;
+}
+body #sidebar-wrapper .sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 230px;
+}
+body #sidebar-wrapper .sidebar-nav ul li {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-left: -40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+body #sidebar-wrapper .sidebar-nav ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+body #sidebar-wrapper .sidebar-nav ul li a:hover {
+  background-color: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+body #sidebar-wrapper .sidebar-nav ul li a:active,
+body #sidebar-wrapper .sidebar-nav ul li a:focus {
+  text-decoration: none;
+}
+body #sidebar-wrapper .sidebar-nav>.sidebar-brand {
+  font-size: 20px;
+  height: 70px;
+  position: relative;
+}
+body #sidebar-wrapper .sidebar-nav>.sidebar-brand img {
+  float: left;
+  height: 35px;
+  margin: 20px 0px 0px 20px;
+}
+body #sidebar-wrapper .sidebar-nav>.sidebar-brand a {
+  color: #fff;
+  position: absolute;
+  right: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 12px;
+}
+body #sidebar-wrapper .sidebar-nav>.sidebar-brand a span {
+  top: 3px;
+  margin-left: 2px;
+}
+body #sidebar-wrapper .sidebar-nav>.sidebar-brand a:hover {
+  background-color: none;
+  color: #fff;
+}
+.contenido-ruta {
+  min-height: 100vh;
+  padding: 80px 120px;
+}
+.contenido-ruta .titulo-ruta {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.contenido-ruta .seccion-ruta {
+  margin: 20px 0px;
+}
+.contenido-ruta .seccion-ruta .titulo-seccion {
+  font-weight: bold;
+  font-size: 18px;
+}
+.contenido-ruta .seccion-ruta .texto-seccion {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .barra a {
+    margin-left: 20px !important;
+  }
+  .contenido-ruta {
+    padding: 80px 30px;
+  }
+  .slider-imagenes .carousel .caption-background h1 {
+    font-size: 20px;
+  }
+  .slider-imagenes .carousel .caption-background p {
+    font-size: 14px;
+  }
+}

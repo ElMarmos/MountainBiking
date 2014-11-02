@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mtn Biking</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+</head>
+<body>
+
+	<header>
+
+		<div id="menu">
+
+			<div id="sidebar-wrapper">
+				<ul class="sidebar-nav">
+					<li class="sidebar-brand">
+						<div class="wrap-brand">
+
+							<a class="menu-toggle" href="#">Close<span class="glyphicon glyphicon-remove"></span>
+							</a>
+
+						</div>
+					</li>
+
+					<div class="main-menu">
+
+						<ul>
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="ruta.html">Dapa</a>
+							</li>
+							<li>
+								<a href="#">Packages</a>
+							</li>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<ul>
+
+					</div>
+				</ul>
+			</div>
+		</div>
+
+			<div class="barra">
+				<a class="menu-toggle" href="#"><img src="../IMAGES/wheel.svg" width="35px" style="margin-right: 8px; padding-bottom:5px">MENU</a>
+			</div>
+
+	</header>
+
+	<div class="contenido-ruta">
+		<h1 class="titulo-ruta">Dapa and Tea Fields</h1>
+
+		<div class="seccion-ruta">
+			<span class="titulo-seccion">Description: </span>
+			<p class="texto-seccion">This route requires a high stamina levels, the ascend is tough but you will be  rewarded with a beautiful landscape of the tea planted fields and the opportunity to breath  its pleasent odor.</p>
+		</div>
+		<div class="seccion-ruta">
+			<span class="titulo-seccion">Average Temperature: </span>
+			<p class="texto-seccion">20°C to 25°C</p>
+		</div>
+		<div class="seccion-ruta">
+			<span class="titulo-seccion">Route Length: </span>
+			<p class="texto-seccion">35Km.</p>
+		</div>
+	</div>
+
+
+	<div class="div-footer2">
+		<span>-Designed by-</span>
+		<p><a href="">Alejandro Marmolejo</a> | <a href="">Juan Manuel Mendez</a></p>
+	</div>
+
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="../JS/jquery.min.js"></script>
+	<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+
+	<!-- JavaScript para el Menu Toggle -->
+	<script>
+	$(".menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#menu").toggleClass("active");
+	});
+	</script>
+</body>
+</html>

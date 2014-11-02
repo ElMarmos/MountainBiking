@@ -1,0 +1,243 @@
+azulclaro = #2DA0E3;
+azulmedioclaro = #1F90D2;
+azulmediooscuro = #2767AB;
+azuloscuro = #1E252F;
+bgcolor = #E5E6DF;
+
+//  <<-------------Pagina Principal------------->>
+
+// body, html
+// 	height 100%
+
+body
+	background-color bgcolor;
+	font-family 'Lato', sans-serif
+		
+	.barra
+		background-color azulclaro
+		height 70px
+		position fixed
+		width 100%
+		z-index 30
+
+		a
+			color white
+			font-size 20px
+			font-weight bold
+			line-height 65px
+			text-decoration none
+			margin-left 40px
+
+			span
+				margin-left 4px
+		
+	.separador-contenido
+		height 10px
+		background-color azulmedioclaro
+		
+	.div-info
+		display table
+		width 100%
+		
+		#foto-panel-info
+			background-position center
+			border 10px solid white
+			box-shadow 0px 0px 30px rgba(black, 0.3)
+			height 50vh
+			margin 0 auto
+			max-width 50vh
+			width 100%
+			
+		#texto-panel-info
+			min-height 50vh
+			margin 0 auto
+			width 100%
+			max-width 80vh
+			
+			h1 
+				margin 0px
+
+			p
+				text-align justify
+
+	// <--Main Container con carousel-->
+
+	.slider-imagenes
+		height 100vh
+		
+		.carousel
+			
+			.caption-background
+				background-color rgba(black, 0.4)
+				border-radius 25px
+				display inline-block
+				padding 10px
+				
+				h1
+					margin 10px 0px
+
+				p
+					font-size 18px
+
+			.slide1
+				background-image url('../IMAGES/elegida.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+			.slide2
+				background-image url('../IMAGES/elegida1.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+			.slide3
+				background-image url('../IMAGES/elegida3.jpg')
+				background-repeat no-repeat
+				background-position center
+				height 100vh
+				
+	// <------------------------------->
+
+	.div-footer2
+		background-color azuloscuro
+		color white
+		height 80px
+		text-align center
+		padding-top 18px
+
+		span
+			font-weight bold
+			display block
+
+		p
+			display block
+			text-transform uppercase
+
+			a
+				text-decoration none
+				color white
+
+				&:hover
+					color azulclaro
+
+	#menu
+		
+		&.active
+			left 230px
+			position relative
+
+			#sidebar-wrapper
+				left 230px
+				transition all 0.4s ease 0s
+				width 230px
+
+	#sidebar-wrapper
+		background-color azuloscuro
+		height 100%
+		left 0px
+		margin-left -230px
+		position fixed
+		transition all 0.4s ease 0s
+		width 230px
+		z-index 1000
+
+		.sidebar-nav
+			list-style none
+			margin 0
+			padding 0
+			position absolute
+			top 0
+			width 230px
+		
+			ul
+				
+				li
+					font-size 18px
+					font-weight bold
+					line-height 40px
+					margin-left -40px
+					text-align center
+					text-transform uppercase
+
+					a
+						color #ffffff
+						display block
+						text-decoration none
+
+						&:hover
+							background-color rgba(255,255,255,0.2)
+							text-decoration none
+
+						&:active
+						&:focus
+							text-decoration none
+
+			&>.sidebar-brand
+				font-size 20px
+				height 70px
+				position relative
+
+				img
+					float left
+					height 35px
+					margin 20px 0px 0px 20px
+
+				a
+					color #ffffff
+					position absolute
+					right 8px
+					text-decoration none
+					text-transform uppercase
+					font-weight bold
+					top 12px
+
+					span
+						top 3px
+						margin-left 2px
+
+					&:hover
+						background-color none
+						color #fff
+
+//  <<-------------Pagina Principal------------->>
+
+
+//  <<-------------Pagina de Ruta------------->>
+
+	.contenido-ruta
+		min-height 100vh
+		padding 80px 120px
+
+		.titulo-ruta
+			font-size 50px
+			font-weight bold
+			margin 20px 0px
+
+		.seccion-ruta
+			margin 20px 0px
+
+			.titulo-seccion
+				font-weight bold
+				font-size 18px
+
+			.texto-seccion
+				font-size 16px
+
+@media screen and (max-width: 768px)
+	
+	.barra
+		a
+			margin-left 20px !important
+
+	.contenido-ruta
+		padding 80px 30px
+		
+	.slider-imagenes
+		.carousel
+			.caption-background
+				h1
+					font-size 20px
+
+				p
+					font-size 14px
