@@ -24,11 +24,11 @@ body .separador-contenido {
   height: 10px;
   background-color: #1f90d2;
 }
-body .div-info {
+body .div-info1 {
   display: table;
   width: 100%;
 }
-body .div-info #foto-panel-info {
+body .div-info1 #foto-panel-info {
   background-position: center;
   border: 10px solid #fff;
   box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
@@ -37,22 +37,25 @@ body .div-info #foto-panel-info {
   max-width: 50vh;
   width: 100%;
 }
-body .div-info #panel-info {
+body .div-info1 #panel-info {
   display: table;
   margin: 0 auto;
   min-height: 49vh;
   max-width: 80vh;
   width: 100%;
 }
-body .div-info #panel-info #texto-panel-info {
+body .div-info1 #panel-info #texto-panel-info {
   display: table-cell;
   vertical-align: middle;
 }
-body .div-info #panel-info #texto-panel-info h1 {
+body .div-info1 #panel-info #texto-panel-info h1 {
   margin: 0px;
 }
-body .div-info #panel-info #texto-panel-info p {
+body .div-info1 #panel-info #texto-panel-info p {
   text-align: justify;
+}
+body .div-info2 {
+  background-color: rgba(30,37,47,0.7);
 }
 body .slider-imagenes {
   height: 100vh;
