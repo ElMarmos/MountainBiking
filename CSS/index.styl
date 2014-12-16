@@ -1,5 +1,7 @@
-azulclaro = #2DA0E3;
-azulmedioclaro = #1F90D2;
+// azulclaro = #2DA0E3;
+naranja = #FF9100;
+// azulmedioclaro = #1F90D2;
+naranja-separador = #FF9100;
 azulmediooscuro = #2767AB;
 azuloscuro = #1E252F;
 bgcolor = #E5E6DF;
@@ -14,11 +16,12 @@ body
 	font-family 'Lato', sans-serif
 		
 	.barra
-		background-color azulclaro
+		background-color naranja
 		height 70px
 		position fixed
 		width 100%
 		z-index 30
+		box-shadow 0px 3px 10px black
 
 		a
 			color white
@@ -31,18 +34,41 @@ body
 			span
 				margin-left 4px
 		
+		.div-titulo-pagina
+			height 100%
+			padding-top 5px
+			position absolute
+			text-align center
+			top 0
+			width 100%
+			z-index -5
+			
+			.titulo-pagina
+				font-family font28
+				font-size 70px
+				margin 0
+				color white
+				font-weight normal
+				text-transform uppercase
+		
 	.separador-contenido
+		background-color naranja-separador
+		box-shadow 0px 0px 20px black
 		height 10px
-		background-color azulmedioclaro
+		z-index 1000
 		
 	.div-info1
+		background-image url('http://www.dailydesktop.eu/data/media/18/Tree%201680X1050%20Texture%20Wallpaper.jpg')
+		background-position center
+		background-repeat no-repeat
+		background-size cover
 		display table
 		width 100%
 		
 		#foto-panel-info
 			background-position center
-			border 10px solid white
-			box-shadow 0px 0px 30px rgba(black, 0.3)
+			border 4px solid #FFC800
+			box-shadow 0px 0px 30px rgba(black, 0.9)
 			height 50vh
 			margin 0 auto
 			max-width 50vh
@@ -51,8 +77,8 @@ body
 		#panel-info
 			display table
 			margin 0 auto
-			min-height 49vh
 			max-width 80vh
+			min-height 49vh
 			width 100%
 			
 			#texto-panel-info
@@ -60,13 +86,24 @@ body
 				vertical-align middle
 			
 				h1 
+					color #FFC800
+					font-family font28
+					font-size 70px
 					margin 0px
+					text-transform capitalize
 
 				p
 					text-align justify
+					font-size 23px
+					text-decoration bold
+					color white
 					
 	.div-info2
-		background-color rgba(azuloscuro, 0.7)
+		background-image url('http://subtlepatterns.com/patterns/debut_dark.png')
+		// background-image url('http://content.wallpapers-room.com/resolutions/1600x1000/W/Wallpapers-room_com___Woody_by_PrekeshC_1600x1000.png')
+		// background-position center
+		// background-repeat no-repeat
+		// background-size cover
 
 	// <--Main Container con carousel-->
 
@@ -127,7 +164,7 @@ body
 				color white
 
 				&:hover
-					color azulclaro
+					color naranja
 
 	#menu
 		
@@ -249,3 +286,9 @@ body
 
 				p
 					font-size 14px
+					
+
+@font-face {
+    font-family: font28;
+    src: url('../FONTS/28.ttf');
+}
