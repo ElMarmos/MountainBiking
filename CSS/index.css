@@ -3,11 +3,12 @@ body {
   font-family: 'Lato', sans-serif;
 }
 body .barra {
-  background-color: #2da0e3;
+  background-color: #ff9100;
   height: 70px;
   position: fixed;
   width: 100%;
   z-index: 30;
+  box-shadow: 0px 3px 10px #000;
 }
 body .barra a {
   color: #fff;
@@ -20,18 +21,41 @@ body .barra a {
 body .barra a span {
   margin-left: 4px;
 }
+body .barra .div-titulo-pagina {
+  height: 100%;
+  padding-top: 5px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: -5;
+}
+body .barra .div-titulo-pagina .titulo-pagina {
+  font-family: font28;
+  font-size: 70px;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 body .separador-contenido {
+  background-color: #ff9100;
+  box-shadow: 0px 0px 20px #000;
   height: 10px;
-  background-color: #1f90d2;
+  z-index: 1000;
 }
 body .div-info1 {
+  background-image: url("http://www.dailydesktop.eu/data/media/18/Tree%201680X1050%20Texture%20Wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: table;
   width: 100%;
 }
 body .div-info1 #foto-panel-info {
   background-position: center;
-  border: 10px solid #fff;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+  border: 4px solid #ffc800;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
   height: 50vh;
   margin: 0 auto;
   max-width: 50vh;
@@ -40,8 +64,8 @@ body .div-info1 #foto-panel-info {
 body .div-info1 #panel-info {
   display: table;
   margin: 0 auto;
-  min-height: 49vh;
   max-width: 80vh;
+  min-height: 49vh;
   width: 100%;
 }
 body .div-info1 #panel-info #texto-panel-info {
@@ -49,13 +73,20 @@ body .div-info1 #panel-info #texto-panel-info {
   vertical-align: middle;
 }
 body .div-info1 #panel-info #texto-panel-info h1 {
+  color: #ffc800;
+  font-family: font28;
+  font-size: 70px;
   margin: 0px;
+  text-transform: capitalize;
 }
 body .div-info1 #panel-info #texto-panel-info p {
   text-align: justify;
+  font-size: 23px;
+  text-decoration: bold;
+  color: #fff;
 }
 body .div-info2 {
-  background-color: rgba(30,37,47,0.7);
+  background-image: url("http://subtlepatterns.com/patterns/debut_dark.png");
 }
 body .slider-imagenes {
   height: 100vh;
@@ -110,7 +141,7 @@ body .div-footer2 p a {
   color: #fff;
 }
 body .div-footer2 p a:hover {
-  color: #2da0e3;
+  color: #ff9100;
 }
 body #menu.active {
   left: 230px;
@@ -219,4 +250,8 @@ body #sidebar-wrapper .sidebar-nav>.sidebar-brand a:hover {
   .slider-imagenes .carousel .caption-background p {
     font-size: 14px;
   }
+}
+@font-face {
+  font-family: font28;
+  src: url("../FONTS/28.ttf");
 }
