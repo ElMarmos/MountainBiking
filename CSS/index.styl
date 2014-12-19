@@ -1,7 +1,7 @@
 // azulclaro = #2DA0E3;
 naranja = #FF9100;
 // azulmedioclaro = #1F90D2;
-naranja-separador = #FF9100;
+naranja-separador = #FC6B0A;
 azulmediooscuro = #2767AB;
 azuloscuro = #1E252F;
 bgcolor = #E5E6DF;
@@ -13,7 +13,7 @@ bgcolor = #E5E6DF;
 
 body
 	background-color bgcolor;
-	font-family 'Lato', sans-serif
+	font-family 'Noto Sans', sans-serif;
 		
 	.barra
 		background-color naranja
@@ -43,13 +43,30 @@ body
 			width 100%
 			z-index -5
 			
-			.titulo-pagina
+			.titulo-pagina-big
 				font-family font28
 				font-size 70px
 				margin 0
-				color white
+				color #301800
 				font-weight normal
 				text-transform uppercase
+				
+			.titulo-pagina-medium
+				font-family font28
+				font-size 50px
+				margin 0
+				color #301800
+				font-weight normal
+				text-transform uppercase
+				
+			.titulo-pagina-small
+				font-family font28
+				font-size 50px
+				margin-right 15px
+				color #301800
+				font-weight normal
+				text-transform uppercase
+				float right
 		
 	.separador-contenido
 		background-color naranja-separador
@@ -58,7 +75,7 @@ body
 		z-index 1000
 		
 	.div-info1
-		background-image url('http://www.dailydesktop.eu/data/media/18/Tree%201680X1050%20Texture%20Wallpaper.jpg')
+		background-image url('../IMAGES/infobg.jpg')
 		background-position center
 		background-repeat no-repeat
 		background-size cover
@@ -90,20 +107,26 @@ body
 					font-family font28
 					font-size 70px
 					margin 0px
+					text-align center
 					text-transform capitalize
 
 				p
-					text-align justify
-					font-size 23px
-					text-decoration bold
 					color white
+					font-size 23px
+					font-weight bold
+					text-align justify
 					
 	.div-info2
-		background-image url('http://subtlepatterns.com/patterns/debut_dark.png')
-		// background-image url('http://content.wallpapers-room.com/resolutions/1600x1000/W/Wallpapers-room_com___Woody_by_PrekeshC_1600x1000.png')
-		// background-position center
-		// background-repeat no-repeat
-		// background-size cover
+		background-image url('../IMAGES/videosbg.png')
+		text-align center
+		
+		.titulo-video
+			color naranja
+			text-transform uppercase
+			margin-top 0px
+			font-family 'Indie Flower', cursive;
+			font-weight bold
+			
 
 	// <--Main Container con carousel-->
 
@@ -250,33 +273,60 @@ body
 
 //  <<-------------Pagina de Ruta------------->>
 
-	.contenido-ruta
-		min-height 100vh
-		padding 80px 120px
+	.bgruta
+		background-image url('../IMAGES/rutabg.jpg')
+		background-position center
+		background-repeat no-repeat
+		background-size cover
 
-		.titulo-ruta
-			font-size 50px
-			font-weight bold
-			margin 20px 0px
+		.contenido-ruta
+			background-color rgba(0,0,0,0.3)
+			min-height 100vh
+			padding 80px 120px
 
-		.seccion-ruta
-			margin 20px 0px
+			.titulo-ruta
+				color #FFA927
+				font-family tituloruta
+				font-size 80px
+				margin 20px 0px
+				text-transform uppercase
 
-			.titulo-seccion
-				font-weight bold
-				font-size 18px
+			.seccion-ruta
+				margin 20px 0px
 
-			.texto-seccion
-				font-size 16px
+				.titulo-seccion
+					font-family tituloruta
+					font-size 40px
+					color #FDCA49
+
+				.texto-seccion
+					color white
+					font-size 20px
+					font-weight bold
+					max-width 500px
+					text-align justify
 
 @media screen and (max-width: 768px)
 	
 	.barra
 		a
 			margin-left 20px !important
+			
+			.div-titulo-pagina
+				float
 
 	.contenido-ruta
-		padding 80px 30px
+		padding 80px 30px !important
+		
+		.titulo-ruta
+			text-align center !important
+			font-size 65px !important
+			
+		.seccion-ruta
+			.titulo-seccion
+				font-size 35px !important
+			.texto-seccion
+				font-size 18px
 		
 	.slider-imagenes
 		.carousel
@@ -286,9 +336,28 @@ body
 
 				p
 					font-size 14px
+			
+	#foto-panel-info
+		max-width 85vh !important
+
+	#panel-info
+		max-width 100vh !important
+
+		#texto-panel-info
+			h1
+				font-size 50px !important
+				text-align center
+				
+			p
+				font-size 18px !important
 					
 
 @font-face {
     font-family: font28;
     src: url('../FONTS/28.ttf');
+}
+
+@font-face {
+    font-family: tituloruta;
+    src: url('../FONTS/tituloruta.ttf');
 }
